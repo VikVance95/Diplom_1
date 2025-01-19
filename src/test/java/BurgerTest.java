@@ -30,7 +30,7 @@ public class BurgerTest {
     @Test
     public void addIngredientTest() {
         burger.addIngredient(ingredient1);
-        assertNotNull("Ингредиент не был добавлен", burger.ingredients.get(0));
+        assertEquals("Ингредиент не был добавлен", ingredient1, burger.ingredients.get(0));
     }
 
     @Test
